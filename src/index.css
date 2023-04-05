@@ -1,0 +1,8 @@
+.bg-image{
+    background-image: url('assets/background.png');
+    background-repeat: no-repeat;
+    /* background-size: revert; */
+    border: 1px solid black;
+    background-position-x: center;
+    background-position-y: top;
+}

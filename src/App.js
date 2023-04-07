@@ -15,10 +15,12 @@ import Tips from "./components/Tips/Tips";
 import Alerts from "./components/Alerts/Alerts";
 import Blog from "./components/Blog/Blog";
 import Button from "./components/Button/Button";
+import Hotels from "./components/Hotels/Hotels";
+import Flights from "./components/Flights/Flights";
 
 const App = () => {
   return (
-    <div className="bg-image container mx-auto">
+    <div>
       <Navigation />
       <main>
         <Routes>
@@ -36,6 +38,8 @@ const App = () => {
           <Route path="/alerts" element={<Alerts />} />     
           <Route path="/blog" element={<Blog />} />     
           <Route path="/b-button" element={<Button />} />     
+          <Route path="/hotels" element={<Hotels />} />     
+          <Route path="/flights" element={<Flights />} />     
         </Routes>
       </main>
     </div>

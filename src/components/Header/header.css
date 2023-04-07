@@ -1,3 +1,26 @@
-.header-bg{
-    background: transparent;
+.header {
+  margin-top: 190px;
+  margin-bottom: 200px;
 }
+
+.header .writing-content{
+ max-width: 820px;
+}
+
+.header .writing-content h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+}
+
+.header .writing-content p{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 200%;
+  font-family: "poppins", sans-serif;
+  padding-top: 40px;
+}
+  

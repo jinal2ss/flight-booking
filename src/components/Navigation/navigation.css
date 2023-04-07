@@ -1,10 +1,26 @@
-.navigation{
-   
+.navigation {
+  padding: 42px 0;
 }
 
-.navigation .logo{
-   font-family: 'poppins', sans-serif;
-   font-weight: 500;
-   font-size: 48px;
+.navigation .logo {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  font-family: "poppins", sans-serif;
 }
 
+.navigation .quick-links a {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "poppins", sans-serif;
+}
+
+.navigation .quick-links button{
+   background-color: #3E86F5;
+   color: #fff;
+   padding: 14px 44px;
+   font-size: 24px;
+   border-radius: 10px;
+}

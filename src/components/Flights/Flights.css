@@ -1,0 +1,144 @@
+.bookings .booking-container .up-cont {
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 50px 50px 50px;
+  padding: 60px 48px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* css for country container */
+
+.bookings .booking-container .up-cont .country {
+  max-width: 382px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 44px 22px;
+  border: 2px solid rgba(172, 172, 172, 0.5);
+  border-radius: 25px;
+  margin-right: 34px;
+}
+
+.bookings .booking-container .up-cont .country .living h5,
+.bookings .booking-container .up-cont .country .going h5 {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  padding-bottom: 4px;
+}
+
+.bookings .booking-container .up-cont .country .plane {
+  padding: 0 30px;
+}
+
+.bookings .booking-container .up-cont .country .plane div {
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookings .booking-container .up-cont .country .plane div i {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  padding: 8px;
+}
+
+.bookings .booking-container .up-cont .country .living h4,
+.bookings .booking-container .up-cont .country .going h4 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "poppins", sans-serif;
+}
+
+.bookings .booking-container .up-cont .date {
+  display: flex;
+  align-items: center;
+  max-width: 478px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* css for search container */
+
+.bookings .booking-container .up-cont .search div.icon {
+  background-color: rgba(62, 134, 245, 0.8);
+  padding: 48px;
+  border-radius: 65px;
+}
+
+.bookings .booking-container .up-cont .search div.icon img {
+  height: 48px;
+  width: 48px;
+}
+
+/* css for date container*/
+
+.bookings .booking-container .up-cont .date {
+  display: flex;
+  align-items: center;
+  padding: 44px 22px;
+  border: 2px solid rgba(172, 172, 172, 0.5);
+  border-radius: 25px;
+  margin-right: 44px;
+}
+
+.bookings .booking-container .up-cont .date .leave span,
+.bookings .booking-container .up-cont .date .return span {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+}
+
+.bookings .booking-container .up-cont .date .leave i,
+.bookings .booking-container .up-cont .date .return i {
+  color: rgba(62, 134, 245, 0.8);
+}
+
+.bookings .booking-container .up-cont .date .return i {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.bookings .booking-container .up-cont .date .calender {
+  padding: 0 48px;
+}
+
+.bookings .booking-container .up-cont .date .calender div {
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookings .booking-container .up-cont .date .calender div i {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  padding: 8px;
+}
+
+.bookings .booking-container .up-cont .date .leave h4,
+.bookings .booking-container .up-cont .date .return h4 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "poppins", sans-serif;
+}

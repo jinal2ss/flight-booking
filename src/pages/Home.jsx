@@ -8,11 +8,10 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Register from "../components/Register/Register";
 import Footer from "../components/Footer/Footer";
 
-
 const Home = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <Bookings />
       <Offers />
       <ContactUs />

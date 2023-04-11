@@ -1,0 +1,96 @@
+/* div.offers {
+  margin-top: 160px;
+}
+
+div.offers h1 {
+  font-family: "poppins", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+} */
+
+.offer-heading{
+  margin-top: 160px;
+  margin-bottom: 60px;
+}
+
+.offer-heading h1{
+  font-family: "poppins", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.offers header{
+  background-color: transparent;
+  box-shadow: none;
+} 
+
+
+.offers .css-heg063-MuiTabs-flexContainer {
+  display: flex;
+  margin: 0 auto;
+  background-color: #fff;
+  max-width: 340px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-bottom: 0 !important;
+}
+
+.offers .css-heg063-MuiTabs-flexContainer .team-btn{
+  opacity: 100;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-family: 'poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.offers .css-heg063-MuiTabs-flexContainer .team-btn:focus{
+  background-color: #3E86F5;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-family: 'poppins', sans-serif;
+  color: #fff;
+}
+
+.offers .css-heg063-MuiTabs-flexContainer .couple-btn{
+  opacity: 100;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-family: 'poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.offers .css-heg063-MuiTabs-flexContainer .couple-btn:focus{
+  background-color: #3E86F5;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+}
+
+.offers .css-heg063-MuiTabs-flexContainer .family-btn{
+  opacity: 100;
+  border-radius: 10px;
+  font-family: 'poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.offers .css-heg063-MuiTabs-flexContainer .family-btn:focus{
+  background-color: #3E86F5;
+  border-radius: 10px;
+  font-family: 'poppins', sans-serif;
+  color: #fff;
+}
+
+.offers .MuiPaper-root .css-11yukd5-MuiTabs-indicator {
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  width: 100%;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: transparent;
+}

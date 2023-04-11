@@ -1,5 +1,5 @@
 import React from "react";
-import "./bookings.css"
+import "./bookings.css";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
@@ -11,9 +11,8 @@ import Box from "@mui/material/Box";
 import Hotels from "../Hotels/Hotels";
 import Flights from "../Flights/Flights";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHotel} from "@fortawesome/free-solid-svg-icons";
-import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
-
+import { faHotel } from "@fortawesome/free-solid-svg-icons";
+import { faPlane } from "@fortawesome/free-solid-svg-icons";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -61,56 +60,92 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box style={{
-      maxWidth:'1440px',
-      margin: '0 auto',
-    }}>
-      <AppBar
-        style={{
-          position: "relative",
-          backgroundColor: "white",
-          color: "black"
-        }}
-      >
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="secondary"
-          textColor="inherit"
-          variant="fullWidth"
-          aria-label="full width tabs example"
+    <div className="bookings">
+      <Box className="container mx-auto">
+        <AppBar
+          style={{
+            position: "relative",
+            color: "black",
+          }}
         >
-          <Tab
-            className="flights"
-            label="Flights"
-            icon={<FontAwesomeIcon icon={faPlaneDeparture} style={{color: 'rgba(62, 134, 245, 0.8)' }} />}
-            {...a11yProps(0)}
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="secondary"
+            textColor="inherit"
+            variant="fullWidth"
+            aria-label="full width tabs example"
           >
-            <span>Hotels</span>
-          </Tab>
+            <Tab
+              style={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "row",
+                textTransform: "capitalize",
+              }}
+              className="flights"
+              label="Flights"
+              icon={
+                <FontAwesomeIcon
+                  icon={faPlane}
+                  style={{
+                    color: "rgba(62, 134, 245, 0.8)",
+                    transform: "rotate(-45deg)",
+                    marginRight: "4px",
+                    fontSize: "20px",
+                  }}
+                />
+              }
+              {...a11yProps(0)}
+            ></Tab>
 
-          <Tab
-            className="hotels"
-            label="Hotels"
-            icon={<FontAwesomeIcon icon={faHotel} style={{color: 'rgba(62, 134, 245, 0.8)' }} />}
-            {...a11yProps(1)}
+            <Tab
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "row",
+                textTransform: "capitalize",
+              }}
+              className="hotels"
+              label="Hotel"
+              icon={
+                <FontAwesomeIcon
+                  icon={faHotel}
+                  style={{
+                    color: "rgba(62, 134, 245, 0.8)",
+                    fontSize: "20px",
+                    marginRight: "4px",
+                  }}
+                />
+              }
+              {...a11yProps(1)}
+            ></Tab>
+          </Tabs>
+        </AppBar>
+        <SwipeableViews
+          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          index={value}
+          onChangeIndex={handleChangeIndex}
+        >
+          <TabPanel
+            className="hotel container"
+            value={value}
+            index={0}
+            dir={theme.direction}
           >
-            <span>Flights</span>
-          </Tab>
-        </Tabs>
-      </AppBar>
-      <SwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-          <Hotels />
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          <Flights />
-        </TabPanel>
-      </SwipeableViews>
-    </Box>
+            <Hotels />
+          </TabPanel>
+          <TabPanel
+            className="flight container"
+            value={value}
+            index={1}
+            dir={theme.direction}
+          >
+            <Flights />
+          </TabPanel>
+        </SwipeableViews>
+      </Box>
+    </div>
   );
 }

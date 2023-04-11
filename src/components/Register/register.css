@@ -1,0 +1,35 @@
+.register{
+    margin-top: 136px;
+}
+
+.register-image {
+  background-image: url("../../assets/earth.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 140px  ;
+}
+
+.register .heading h1 {
+  color: #ffffff;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  padding-top: 114px;
+  padding-bottom: 40px;
+  max-width: 742px;
+  margin: 0 auto;
+}
+
+.register .btn button {
+  padding: 25px 35px;
+  background-color: #ffffff;
+  color: #3e86f5;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 25px;
+  margin-bottom: 115px;
+}

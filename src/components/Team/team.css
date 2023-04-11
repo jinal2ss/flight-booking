@@ -1,0 +1,80 @@
+.card-container .card {
+    background-color: #fff;
+    padding-left: 24px;
+    padding-right: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 160px;
+  }
+  
+  .card-container .card .img-container::after {
+    content: "14 FEB 2022";
+    position: absolute;
+    transform: rotate(90deg);
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    top: 160px;
+    left: 310px;
+  }
+  
+  .card-container .card .days {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-container .card .days button {
+    background-color: #fcddec;
+    border-radius: 100px;
+    font-family: "poppins", sans-serif;
+    color: #f178b6;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 16px;
+    margin-right: 12px;
+  }
+  
+  .card-container .card .days span {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-container .card h3 {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .card-container .card .price h4 {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+  }
+  
+  .card-container .card .price span {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-container .card .price button {
+    font-family: "poppins", sans-serif;
+    color: #3e86f5;
+    padding: 12px 18px;
+    background: #f2f6ff;
+    border-radius: 10px;
+  }

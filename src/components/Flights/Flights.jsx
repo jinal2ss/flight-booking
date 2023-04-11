@@ -5,7 +5,7 @@ import Search from "../../assets/search.png";
 const Flights = () => {
   return (
     <div>
-      <div className="up-cont">
+      <div className="up-cont container mx-auto">
         <div className="country">
           <div className="living">
             <h5>Living From</h5>

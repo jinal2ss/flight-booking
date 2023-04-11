@@ -1,0 +1,123 @@
+
+.t-container {
+  margin-top: 100px;
+}
+
+.t-container .t-card {
+  background-color: #fff;
+  border-radius: 50px;
+  position: relative;
+  max-width: 580px;
+  padding: 0 46px;
+}
+
+.t-container .t-card img.quote {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 220px;
+  top: 36px;
+}
+
+.t-container .t-card p {
+  color: #000000;
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 84px;
+}
+
+.t-container .t-card h6 {
+  text-align: center;
+  color: #3e86f5;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  margin-top: 10px;
+}
+
+.t-container .t-card h5 {
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  margin-top: 2px;
+}
+
+.t-container .t-card .img-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 180px;
+  height: 134px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+}
+
+.t-container .t-card .img-back img {
+  position: relative;
+}
+
+.t-rate {
+  background-color: #fff;
+  padding: 2px 10px;
+  max-width: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  top: 14px;
+  right: 20px;
+  position: absolute;
+}
+
+.t-rate i {
+  color: #f8ce01;
+  font-size: 15px;
+}
+
+.t-rate span {
+  color: #000000;
+  margin-left: 2px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.slide {
+  margin-top: 100px;
+}
+
+.slide .left {
+  border: 2px solid rgba(62, 134, 245, 0.5);
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.slide .left i {
+  color: #3e86f5;
+  font-size: 20px;
+  padding: 10px 14px;
+}
+
+.slide .right {
+  border: 2px solid rgba(62, 134, 245, 0.5);
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.slide .right i {
+  color: #3e86f5;
+  font-size: 20px;
+  padding: 10px 14px;
+}
+

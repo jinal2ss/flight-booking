@@ -4,8 +4,23 @@ import Search from "../../assets/search.png";
 
 const Hotels = () => {
   return (
-    <div className="container mx-auto">
-      <div className="up-cont">
+    <div>
+      <div className="up-cont container mx-auto">
+        <div className="country">
+          <div className="living">
+            <h5>Living From</h5>
+            <h4>Dubai</h4>
+          </div>
+          <div className="plane">
+            <div>
+              <i class="fa-sharp fa-solid fa-plane"></i>
+            </div>
+          </div>
+          <div className="going">
+            <h5>Going to</h5>
+            <h4>New York</h4>
+          </div>
+        </div>
         <div className="date">
           <div className="leave">
             <span>Leave</span>
@@ -22,21 +37,6 @@ const Hotels = () => {
             <span>Return</span>
             <i class="fa-sharp fa-solid fa-plane"></i>
             <h4>14 Jan, Thu</h4>
-          </div>
-        </div>
-        <div className="country">
-          <div className="living">
-            <h5>Living From</h5>
-            <h4>Dubai</h4>
-          </div>
-          <div className="plane">
-            <div>
-              <i class="fa-sharp fa-solid fa-plane"></i>
-            </div>
-          </div>
-          <div className="going">
-            <h5>Going to</h5>
-            <h4>New York</h4>
           </div>
         </div>
         <div className="search">

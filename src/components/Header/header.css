@@ -13,6 +13,7 @@
   line-height: 96px;
   text-align: center;
   font-family: "poppins", sans-serif;
+  color: #fff;
 }
 
 .header .writing-content p{
@@ -22,5 +23,6 @@
   line-height: 200%;
   font-family: "poppins", sans-serif;
   padding-top: 40px;
+  color: #fff;
 }
   

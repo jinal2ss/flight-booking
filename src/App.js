@@ -17,10 +17,16 @@ import Blog from "./components/Blog/Blog";
 import Button from "./components/Button/Button";
 import Hotels from "./components/Hotels/Hotels";
 import Flights from "./components/Flights/Flights";
+import Team from "./components/Team/Team";
+import Family  from "./components/Family/Family";
+import Couple from "./components/Couple/Couple";
+import Popular from "./components/Popular/Popular";
+import Adventure from "./components/Adventure/Adventure";
+import Beth from "./components/Beth/Beth";
 
 const App = () => {
   return (
-    <div>
+    <div className="abc container mx-auto">
       <Navigation />
       <main>
         <Routes>
@@ -39,7 +45,13 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />     
           <Route path="/b-button" element={<Button />} />     
           <Route path="/hotels" element={<Hotels />} />     
-          <Route path="/flights" element={<Flights />} />     
+          <Route path="/flights" element={<Flights />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/family" element={<Family />} />
+          <Route path="/couple" element={<Couple />} />
+          <Route path="/popular" element={<Popular />} />
+          <Route path="/adventure" element={<Adventure />} />
+          <Route path="/beth" element={<Beth />} />
         </Routes>
       </main>
     </div>

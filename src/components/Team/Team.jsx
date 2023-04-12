@@ -11,6 +11,7 @@ const Team = () => {
         <div className="card">
           <div className="img-container">
             <img src={LogaSea} alt="sea" />
+            <h4>14 FEB 2022</h4>
           </div>
           <div className="days">
             <button>Relax</button>
@@ -29,6 +30,7 @@ const Team = () => {
         <div className="card">
           <div className="img-container">
             <img src={Ansgar} alt="sea" />
+            <h4>18 JUN 2022</h4>
           </div>
           <div className="days">
             <button>Relax</button>
@@ -47,6 +49,7 @@ const Team = () => {
         <div className="card">
           <div className="img-container">
             <img src={Lona} alt="sea" />
+            <h4>22 DEC 2022</h4>
           </div>
           <div className="days">
             <button>Relax</button>

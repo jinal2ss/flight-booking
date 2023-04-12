@@ -3,8 +3,6 @@
 
 .MuiBox-root .hotel {
   padding: 0;
-  max-width: 1440px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
 .MuiBox-root .up-cont {
@@ -14,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 .MuiBox-root .up-cont .country {

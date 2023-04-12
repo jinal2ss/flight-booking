@@ -1,4 +1,4 @@
- .destination-heading h1 {
+.destination-heading h1 {
   font-family: "poppins", sans-serif;
   color: #000000;
   font-weight: 600;
@@ -7,66 +7,52 @@
   text-align: center;
   margin-top: 170px;
   margin-bottom: 40px;
-  
-} 
+}
 
-.destination header{
+.destination header {
   background-color: transparent;
   box-shadow: none;
-} 
+}
 
 .destination .css-heg063-MuiTabs-flexContainer {
   display: flex;
   margin: 0 auto;
-  max-width: 340px;
+  max-width: 400px;
   border-radius: 10px;
   padding: 10px;
+  margin-bottom: 78px;
 }
 
-.destination .css-heg063-MuiTabs-flexContainer .popular-btn{
+.destination .css-heg063-MuiTabs-flexContainer .popular-btn {
   opacity: 100;
   border-radius: 10px;
   margin-right: 10px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 
-.destination .css-heg063-MuiTabs-flexContainer .popular-btn:focus{
-  background-color: #3E86F5;
-  border-radius: 10px;
-  margin-right: 10px;
-  font-family: 'poppins', sans-serif;
-  color: #fff;
-}
-
-.destination .css-heg063-MuiTabs-flexContainer .adventure-btn{
+.destination .css-heg063-MuiTabs-flexContainer .adventure-btn {
   opacity: 100;
   border-radius: 10px;
   margin-right: 10px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 
-.destination .css-heg063-MuiTabs-flexContainer .adventure-btn:focus{
-  background-color: #3E86F5;
-  border-radius: 10px;
-  margin-right: 10px;
-  color: #fff;
-  font-family: 'poppins', sans-serif;
-}
-
-.destination .css-heg063-MuiTabs-flexContainer .beth-btn{
+.destination .css-heg063-MuiTabs-flexContainer .beth-btn {
   opacity: 100;
   border-radius: 10px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   color: rgba(0, 0, 0, 0.5);
-}
-
-.destination .css-heg063-MuiTabs-flexContainer .beth-btn:focus{
-  background-color: #3E86F5;
-  border-radius: 10px;
-  font-family: 'poppins', sans-serif;
-  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .destination .MuiPaper-root .css-11yukd5-MuiTabs-indicator {
@@ -78,40 +64,8 @@
   background-color: transparent;
 }
 
-/* .main-wrapper-destination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
+.destination .css-19kzrtu {
+  margin: 0;
+  padding: 0;
+  height: 330px;
 }
-
-.btn-container-destination {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.btn-container-destination button.active {
-  padding: 10px 24px;
-  background: #fff;
-  border-radius: 10px;
-  font-family: "poppins", sans-serif;
-  color: #3e86f5;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.btn-container-destination button {
-  padding: 10px 24px;
-  border-radius: 10px;
-  font-family: "poppins", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-} */
-
-

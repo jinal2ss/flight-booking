@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./bookings.css";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
@@ -59,6 +59,12 @@ export default function FullWidthTabs() {
     setValue(index);
   };
 
+  const [selectedButton, setSelectedButton] = useState(1);
+
+  const handleButtonSelection = (buttonId) => {
+    setSelectedButton(buttonId);
+  };
+
   return (
     <div className="bookings">
       <Box className="container mx-auto">
@@ -77,11 +83,13 @@ export default function FullWidthTabs() {
             aria-label="full width tabs example"
           >
             <Tab
+              onClick={() => handleButtonSelection(1)}
               style={{
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "row",
                 textTransform: "capitalize",
+                backgroundColor: selectedButton === 1 ? "rgba(62, 134, 245, 0.2)" : "white",
               }}
               className="flights"
               label="Flights"
@@ -100,12 +108,14 @@ export default function FullWidthTabs() {
             ></Tab>
 
             <Tab
+              onClick={() => handleButtonSelection(2)}
               style={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "row",
                 textTransform: "capitalize",
+                backgroundColor: selectedButton === 2 ? "rgba(62, 134, 245, 0.2)" : "white",
               }}
               className="hotels"
               label="Hotel"

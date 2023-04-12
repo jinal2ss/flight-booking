@@ -7,8 +7,8 @@ import Kina4 from "../../assets/kina4.png";
 
 const Popular = () => {
   return (
-    <div className='popular container mx-auto'>
-      <div className="card-container flex justify-between">
+    <div className='popular container'>
+      <div className="card-container mx-auto flex justify-between">
         <div className="d-card">
           <img src={Kina} alt="mountain" />
           <div className="rate">

@@ -1,25 +1,27 @@
-.card-container .card {
-    background-color: #fff;
-    padding-left: 24px;
-    padding-right: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-radius: 50px;
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 160px;
+.family .card-container .card {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 50px;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+  }
+
+  .family .card-container .card .img-container{
+    display: flex;
+    align-items: center;
   }
   
-  .card-container .card .img-container::after {
-    content: "14 FEB 2022";
-    position: absolute;
+  .family .card-container .card .img-container h4 {
     transform: rotate(90deg);
     color: rgba(0, 0, 0, 0.5);
     font-family: "poppins", sans-serif;
     font-weight: 500;
-    font-size: 14px;
-    top: 160px;
-    left: 310px;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.5em;
+    position: absolute;
+    right: -68px;
   }
   
   .card-container .card .days {

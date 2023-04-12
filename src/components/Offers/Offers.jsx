@@ -1,83 +1,4 @@
-// import React from "react";
-// import "./offers.css";
-// import LogaSea from "../../assets/Loga-Sea.png";
-// import Ansgar from "../../assets/Ansgar.png";
-// import Lona from "../../assets/Lona.png";
-
-// const Offers = () => {
-//   return (
-// <div className="offers container mx-auto">
-//   <h1 className="text-center">Special Upcoming Offers</h1>
-//   <div className="main-wrapper">
-//     <div className="btn-container">
-//       <button className="active mr-3">Team</button>
-//       <button className="mr-3">Couple</button>
-//       <button>Family</button>
-//     </div>
-//   </div>
-//       {/* <div className="card-container flex justify-between">
-//         <div className="card">
-//           <div className="img-container">
-//             <img src={LogaSea} alt="sea" />
-//           </div>
-//           <div className="days">
-//             <button>Relax</button>
-//             <span>3 Days, 3 Nights</span>
-//           </div>
-//           <h3>Loga Sea</h3>
-//           <div className="price flex justify-between items-center">
-//             <div className="writing">
-//               <h4>
-//                 700$ <span>/Person</span>
-//               </h4>
-//             </div>
-//             <button>Book Now</button>
-//           </div>
-//         </div>
-//         <div className="card">
-//           <div className="img-container">
-//             <img src={Ansgar} alt="sea" />
-//           </div>
-//           <div className="days">
-//             <button>Relax</button>
-//             <span>3 Days, 3 Nights</span>
-//           </div>
-//           <h3>Loga Sea</h3>
-//           <div className="price flex justify-between items-center">
-//             <div className="writing">
-//               <h4>
-//                 700$ <span>/Person</span>
-//               </h4>
-//             </div>
-//             <button>Book Now</button>
-//           </div>
-//         </div>
-//         <div className="card">
-//           <div className="img-container">
-//             <img src={Lona} alt="sea" />
-//           </div>
-//           <div className="days">
-//             <button>Relax</button>
-//             <span>3 Days, 3 Nights</span>
-//           </div>
-//           <h3>Loga Sea</h3>
-//           <div className="price flex justify-between items-center">
-//             <div className="writing">
-//               <h4>
-//                 700$ <span>/Person</span>
-//               </h4>
-//             </div>
-//             <button>Book Now</button>
-//           </div>
-//         </div>
-//       </div> */}
-//     </div>
-//   );
-// };
-
-// export default Offers;
-
-import React, { useEffect, useRef } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
@@ -93,7 +14,6 @@ import "./offers.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-  
 
   return (
     <div
@@ -137,13 +57,11 @@ export default function FullWidthTabs() {
     setValue(index);
   };
 
-  const activeFilterBtnRef = useRef(null);
+  const [selectedButton, setSelectedButton] = useState(1);
 
-  useEffect(() => {
-    if (activeFilterBtnRef.current) {
-      activeFilterBtnRef.current.focus({ focusVisible: true });
-    }
-  }, []);
+  const handleButtonSelection = (buttonId) => {
+    setSelectedButton(buttonId);
+  };
 
   return (
     <div className="offers">
@@ -153,6 +71,7 @@ export default function FullWidthTabs() {
             <h1>Special Upcoming Offers</h1>
           </div>
           <Tabs
+            style={{marginBottom:'40px'}}
             sx={{ width: "340px", margin: "0 auto" }}
             value={value}
             onChange={handleChange}
@@ -161,9 +80,39 @@ export default function FullWidthTabs() {
             variant="fullWidth"
             aria-label="full width tabs example"
           >
-            <Tab ref={activeFilterBtnRef} className="team-btn" label="Team" {...a11yProps(0)} />
-            <Tab className="couple-btn" label="Couple" {...a11yProps(1)} />
-            <Tab className="family-btn" label="Family" {...a11yProps(2)} />
+            <Tab
+              onClick={() => handleButtonSelection(1)}
+              style={{
+                backgroundColor: selectedButton === 1 ? "#3E86F5" : "white",
+                color:
+                  selectedButton === 1 ? "white" : "rgba(0, 0, 0, 0.5)",
+              }}
+              className="team-btn"
+              label="Team"
+              {...a11yProps(0)}
+            />
+            <Tab
+              onClick={() => handleButtonSelection(2)}
+              style={{
+                backgroundColor: selectedButton === 2 ? "#3E86F5" : "white",
+                color:
+                  selectedButton === 2 ? "white" : "rgba(0, 0, 0, 0.5)",
+              }}
+              className="couple-btn"
+              label="Couple"
+              {...a11yProps(1)}
+            />
+            <Tab
+              onClick={() => handleButtonSelection(3)}
+              style={{
+                backgroundColor: selectedButton === 3 ? "#3E86F5" : "white",
+                color:
+                  selectedButton === 3 ? "white" : "rgba(0, 0, 0, 0.5)",
+              }}
+              className="family-btn"
+              label="Family"
+              {...a11yProps(2)}
+            />
           </Tabs>
         </AppBar>
         <SwipeableViews
@@ -175,10 +124,10 @@ export default function FullWidthTabs() {
             <Team />
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
-            <Family />
+            <Couple />
           </TabPanel>
           <TabPanel value={value} index={2} dir={theme.direction}>
-            <Couple />
+           <Family/>
           </TabPanel>
         </SwipeableViews>
       </Box>

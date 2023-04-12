@@ -4,7 +4,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="footer container mx-auto">
-      <div className="footer-content flex justify-between items-center">
+      <div className="footer-content container flex justify-between items-center">
         <div className="copy-right">
           <h4>© 2022 Treloo LLC - All right reserved.</h4>
         </div>

@@ -67,8 +67,7 @@
 // };
 
 // export default Destinations;
-
-import React, { useEffect, useRef } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
@@ -127,13 +126,11 @@ export default function FullWidthTabs() {
     setValue(index);
   };
 
-  const activeFilterBtnRef = useRef(null);
+  const [selectedButton, setSelectedButton] = useState(1);
 
-  useEffect(() => {
-    if (activeFilterBtnRef.current) {
-      activeFilterBtnRef.current.focus({ focusVisible: true });
-    }
-  }, []);
+  const handleButtonSelection = (buttonId) => {
+    setSelectedButton(buttonId);
+  };
 
   return (
     <div className="destination">
@@ -150,9 +147,37 @@ export default function FullWidthTabs() {
             variant="fullWidth"
             aria-label="full width tabs example"
           >
-            <Tab ref={activeFilterBtnRef} className="popular-btn" label="Popular" {...a11yProps(0)} />
-            <Tab className="adventure-btn" label="Adventure" {...a11yProps(1)} />
-            <Tab className="beth-btn" label="Beth" {...a11yProps(2)} />
+            <Tab
+              style={{
+                backgroundColor: selectedButton === 1 ? "white" : "transparent",
+                color: selectedButton === 1 ? "#3E86F5" : "rgba(0, 0, 0, 0.5)",
+              }}
+              onClick={() => handleButtonSelection(1)}
+              className="popular-btn"
+              label="Popular"
+              {...a11yProps(0)}
+            />
+            <Tab
+              style={{
+                backgroundColor: selectedButton === 2 ? "white" : "transparent",
+                color: selectedButton === 2 ? "#3E86F5" : "rgba(0, 0, 0, 0.5)",
+                padding: "10px 20px",
+              }}
+              onClick={() => handleButtonSelection(2)}
+              className="adventure-btn"
+              label="Adventure"
+              {...a11yProps(1)}
+            />
+            <Tab
+              style={{
+                backgroundColor: selectedButton === 3 ? "white" : "transparent",
+                color: selectedButton === 3 ? "#3E86F5" : "rgba(0, 0, 0, 0.5)",
+              }}
+              onClick={() => handleButtonSelection(3)}
+              className="beth-btn"
+              label="Beth"
+              {...a11yProps(2)}
+            />
           </Tabs>
         </AppBar>
         <SwipeableViews

@@ -6,11 +6,12 @@ import Lona from "../../assets/Lona.png";
 
 const Family = () => {
   return (
-    <div className="container mx-auto">
+    <div className="family container mx-auto">
       <div className="card-container flex justify-between">
         <div className="card">
           <div className="img-container">
             <img src={LogaSea} alt="sea" />
+            <h4>18 JUN 2022</h4>
           </div>
           <div className="days">
             <button>Relax</button>
@@ -29,6 +30,7 @@ const Family = () => {
         <div className="card">
           <div className="img-container">
             <img src={Ansgar} alt="sea" />
+            <h4>18 JUN 2022</h4>
           </div>
           <div className="days">
             <button>Relax</button>
@@ -47,6 +49,7 @@ const Family = () => {
         <div className="card">
           <div className="img-container">
             <img src={Lona} alt="sea" />
+            <h4>18 JUN 2022</h4>
           </div>
           <div className="days">
             <button>Relax</button>

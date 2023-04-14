@@ -6,23 +6,28 @@
 }
 
 .MuiBox-root .up-cont {
-  background-color: #fff;
+  background-color: white;
   border-radius: 0px 50px 50px 50px;
   padding: 60px 48px;
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 
 .MuiBox-root .up-cont .country {
-  max-width: 382px;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 44px 22px;
   border: 2px solid rgba(172, 172, 172, 0.5);
   border-radius: 25px;
+  max-width: 412px;
+  align-items: center;
+}
+
+.MuiBox-root .up-cont .country .living,
+.MuiBox-root .up-cont .country .going {
+  display: flex;
+  flex-direction: column;
+  padding: 44px 22px;
 }
 
 .MuiBox-root .up-cont .country .living h5,
@@ -35,61 +40,54 @@
   padding-bottom: 4px;
 }
 
-.MuiBox-root .up-cont .country .plane {
-  padding: 0 30px;
-}
-
-.MuiBox-root .up-cont .country .plane div {
-  border: 1px dashed rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.MuiBox-root .up-cont .country .plane div i {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 24px;
-  padding: 8px;
-}
-
-.MuiBox-root .up-cont .country .living h4,
-.MuiBox-root .up-cont .country .going h4 {
-  color: #000000;
+.MuiBox-root .up-cont .country .living input,
+.MuiBox-root .up-cont .country .going input {
+  max-width: 136px;
+  outline: none;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
   font-family: "poppins", sans-serif;
+  color: #000000;
+}
+
+.MuiBox-root .up-cont .country .living input::placeholder,
+.MuiBox-root .up-cont .country .going input::placeholder {
+  color: #000000;
 }
 
 .MuiBox-root .up-cont .date {
   display: flex;
-  align-items: center;
-  max-width: 478px;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.MuiBox-root .up-cont .search div.icon {
-  background-color: rgba(62, 134, 245, 0.8);
-  padding: 48px;
-  border-radius: 65px;
-}
-
-.MuiBox-root .up-cont .search div.icon img {
-  height: 48px;
-  width: 48px;
-}
-
-.MuiBox-root .up-cont .date {
-  display: flex;
-  align-items: center;
-  padding: 44px 22px;
   border: 2px solid rgba(172, 172, 172, 0.5);
   border-radius: 25px;
+  max-width: 478px;
+  max-height: 160px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.MuiBox-root .up-cont .date .leave,
+.MuiBox-root .up-cont .date .return {
+  padding: 44px 22px;
+}
+
+.MuiBox-root .up-cont .date .leave input,
+.MuiBox-root .up-cont .date .return input {
+  max-width: 136px;
+  outline: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "poppins", sans-serif;
+  color: #000000;
+}
+
+.MuiBox-root .up-cont .date .leave input::placeholder,
+.MuiBox-root .up-cont .date .return input::placeholder {
+  color: #000000;
+}
+
 
 .MuiBox-root .up-cont .date .leave span,
 .MuiBox-root .up-cont .date .return span {
@@ -98,48 +96,60 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  padding-bottom: 4px;
   padding-right: 8px;
+  padding-bottom: 4px;
 }
 
-.MuiBox-root .up-cont .date .leave i,
+.MuiBox-root .up-cont .date .leave i {
+  color: rgba(62, 134, 245, 0.8);
+  font-size: 18px;
+}
+
 .MuiBox-root .up-cont .date .return i {
   color: rgba(62, 134, 245, 0.8);
-}
-
-.MuiBox-root .up-cont .date .return i {
+  font-size: 18px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .MuiBox-root .up-cont .date .calender {
-  padding: 0 48px;
+  margin-right: 30px;
 }
 
 .MuiBox-root .up-cont .date .calender div {
+  padding: 8px;
   border: 1px dashed rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .MuiBox-root .up-cont .date .calender div i {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 24px;
-  padding: 8px;
+  color: #999999;
+  font-size: 20px;
 }
 
-.MuiBox-root .up-cont .date .leave h4,
-.MuiBox-root .up-cont .date .return h4 {
-  color: #000000;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  font-family: "poppins", sans-serif;
+.MuiBox-root .up-cont .plane {
+  margin-right: 30px;
 }
 
-.flight .MuiBox-root {
-  padding: 0;
+.MuiBox-root .up-cont .plane div {
+  padding: 8px 6px;
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiBox-root .up-cont .plane i {
+  color: #999999;
+  font-size: 20px;
+}
+
+.MuiBox-root .up-cont .search button{
+  background-color: rgba(62, 134, 245, 0.8);
+  color: #fff;
+  padding: 46px;
+  border-radius: 65px;
 }

@@ -1,5 +1,5 @@
 /* css for down cont */
-.bookings{
+.bookings {
   margin-top: -60px;
   margin-bottom: 160px;
 }
@@ -20,7 +20,7 @@
   background-color: white;
 }
 
-.bookings .MuiPaper-root{
+.bookings .MuiPaper-root {
   background-color: transparent !important;
   color: black;
 }
@@ -30,7 +30,7 @@
   border-radius: 25px;
   background-color: transparent;
   text-transform: capitalize;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   opacity: 100%;
@@ -40,12 +40,11 @@
   padding: 15px 20px;
   border-radius: 25px;
   text-transform: capitalize;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   opacity: 100%;
 }
-
 
 .bookings .MuiPaper-root .css-11yukd5-MuiTabs-indicator {
   background-color: transparent;

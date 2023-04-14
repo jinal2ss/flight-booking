@@ -89,7 +89,8 @@ export default function FullWidthTabs() {
                 alignItems: "center",
                 flexDirection: "row",
                 textTransform: "capitalize",
-                backgroundColor: selectedButton === 1 ? "rgba(62, 134, 245, 0.2)" : "white",
+                backgroundColor:
+                  selectedButton === 1 ? "rgba(62, 134, 245, 0.2)" : "white",
               }}
               className="flights"
               label="Flights"
@@ -115,7 +116,8 @@ export default function FullWidthTabs() {
                 alignItems: "center",
                 flexDirection: "row",
                 textTransform: "capitalize",
-                backgroundColor: selectedButton === 2 ? "rgba(62, 134, 245, 0.2)" : "white",
+                backgroundColor:
+                  selectedButton === 2 ? "rgba(62, 134, 245, 0.2)" : "white",
               }}
               className="hotels"
               label="Hotel"
@@ -144,7 +146,7 @@ export default function FullWidthTabs() {
             index={0}
             dir={theme.direction}
           >
-            <Hotels />
+            <Flights />
           </TabPanel>
           <TabPanel
             className="flight container"
@@ -152,7 +154,7 @@ export default function FullWidthTabs() {
             index={1}
             dir={theme.direction}
           >
-            <Flights />
+            <Hotels />
           </TabPanel>
         </SwipeableViews>
       </Box>

@@ -4,7 +4,7 @@
 .MuiBox-root .hotel {
   padding: 0;
 }
-
+/* 
 .MuiBox-root .up-cont {
   background-color: white;
   border-radius: 0px 50px 50px 50px;
@@ -54,9 +54,9 @@
 .MuiBox-root .up-cont .country .living input::placeholder,
 .MuiBox-root .up-cont .country .going input::placeholder {
   color: #000000;
-}
+} */
 
-.MuiBox-root .up-cont .date {
+/* .MuiBox-root .up-cont .date {
   display: flex;
   border: 2px solid rgba(172, 172, 172, 0.5);
   border-radius: 25px;
@@ -109,13 +109,13 @@
   color: rgba(62, 134, 245, 0.8);
   font-size: 18px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
-}
+} */
 
-.MuiBox-root .up-cont .date .calender {
+/* .MuiBox-root .up-cont .date .calender {
   margin-right: 30px;
-}
+} */
 
-.MuiBox-root .up-cont .date .calender div {
+/* .MuiBox-root .up-cont .date .calender div {
   padding: 8px;
   border: 1px dashed rgba(0, 0, 0, 0.5);
   border-radius: 100%;
@@ -129,7 +129,7 @@
   font-size: 20px;
 }
 
-.MuiBox-root .up-cont .plane {
+ .MuiBox-root .up-cont .plane {
   margin-right: 30px;
 }
 
@@ -140,7 +140,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
 
 .MuiBox-root .up-cont .plane i {
   color: #999999;
@@ -152,4 +152,4 @@
   color: #fff;
   padding: 46px;
   border-radius: 65px;
-}
+} */

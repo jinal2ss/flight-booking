@@ -11,6 +11,7 @@
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: space-between;
 }
 
 .MuiBox-root .up-cont .country {
@@ -18,13 +19,13 @@
   border: 2px solid rgba(172, 172, 172, 0.5);
   border-radius: 25px;
   align-items: center;
+  padding: 44px 22px;
 }
 
 .MuiBox-root .up-cont .country .living,
 .MuiBox-root .up-cont .country .going {
   display: flex;
   flex-direction: column;
-  padding: 44px 22px;
 }
 
 .MuiBox-root .up-cont .country .living h5,
@@ -53,106 +54,6 @@
   color: #000000;
 }
 
-.MuiBox-root .up-cont .date {
-  display: flex;
-  border: 2px solid rgba(172, 172, 172, 0.5);
-  border-radius: 25px;
-  align-items: center;
-  padding: 44px 22px;
-}
-
-.MuiBox-root .up-cont .date .leave span,
-.MuiBox-root .up-cont .date .return span {
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  padding-right: 8px;
-  padding-bottom: 4px;
-}
-
-.leave .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  text-align: left;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: -5px;
-  left: 0;
-  margin: 0;
-  padding: 0 8px;
-  pointer-events: none;
-  border-radius: inherit;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  min-width: 0%;
-  border-color: rgba(0, 0, 0, 0.23);
-  border: none;
-}
-
-.leave .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: rgba(0, 0, 0, 0.6);
-  max-width: calc(100% - 24px);
-  z-index: 1;
-  pointer-events: none;
-  border: 1px solid red;
-  font-size: 0;
-}
-
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.87);
-  cursor: text;
-  align-items: center;
-  position: relative;
-  border-radius: 4px;
-  border: 1px solid black;
-}
-
-.MuiBox-root .up-cont .date .leave input,
-.MuiBox-root .up-cont .date .return input {
-  outline: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 36px;
-  font-family: "poppins", sans-serif;
-  color: #000000;
-  padding: 0px;
-}
-
-.MuiBox-root .up-cont .date .leave,
-.MuiBox-root .up-cont .date .return {
-  padding: 0;
-}
-
-.MuiBox-root .up-cont .date .leave i {
-  color: rgba(62, 134, 245, 0.8);
-  font-size: 18px;
-}
-
-.MuiBox-root .up-cont .date .return i {
-  color: rgba(62, 134, 245, 0.8);
-  font-size: 18px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-.MuiBox-root .up-cont .date .calender div {
-  padding: 8px 6px;
-  border: 1px dashed rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.MuiBox-root .up-cont .date .calender div i {
-  color: #999999;
-  font-size: 20px;
-}
-
 .MuiBox-root .up-cont .plane {
   margin-right: 30px;
 }
@@ -169,6 +70,122 @@
 .MuiBox-root .up-cont .plane i {
   color: #999999;
   font-size: 20px;
+}
+
+.MuiBox-root .up-cont .date {
+  display: flex;
+  border: 2px solid rgba(172, 172, 172, 0.5);
+  border-radius: 25px;
+  align-items: center;
+  padding: 44px 22px;
+}
+
+.MuiBox-root .up-cont .date .leave div span,
+.MuiBox-root .up-cont .date .return div span {
+  font-family: "poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.MuiBox-root .up-cont .date .leave div i,
+.MuiBox-root .up-cont .date .return div i {
+  color: rgba(62, 134, 245, 0.8);
+  font-size: 18px;
+}
+
+.MuiBox-root .up-cont .date .leave .ant-space .anticon svg,
+.MuiBox-root .up-cont .date .return .ant-space .anticon svg {
+  display: inline-block;
+  height: 0;
+  width: 0px;
+}
+
+.MuiBox-root .up-cont .date .leave .ant-space .ant-picker,
+.MuiBox-root .up-cont .date .return .ant-space .ant-picker {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 0 0 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1;
+  list-style: none;
+  font-family: "poppins", sans-serif;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 6px;
+  transition: border 0.2s, box-shadow 0.2s;
+  border: none;
+  outline: none !important;
+}
+
+.MuiBox-root
+  .up-cont
+  .date
+  .leave
+  .ant-space
+  .ant-picker
+  .ant-picker-input
+  input,
+.MuiBox-root
+  .up-cont
+  .date
+  .return
+  .ant-space
+  .ant-picker
+  .ant-picker-input
+  input {
+  border: none;
+  outline: none !important;
+  font-family: "poppins", sans-serif;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.MuiBox-root
+  .up-cont
+  .date
+  .leave
+  .ant-space
+  .ant-picker
+  .ant-picker-input
+  input:focus,
+.MuiBox-root
+  .up-cont
+  .date
+  .return
+  .ant-space
+  .ant-picker
+  .ant-picker-input
+  input:focus {
+  border: none;
+  outline: none !important;
+}
+
+.MuiBox-root .up-cont .date .calender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+.MuiBox-root .up-cont .date .calender div {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+}
+
+.MuiBox-root .up-cont .date .calender div i {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .MuiBox-root .up-cont .search button {

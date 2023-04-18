@@ -1,6 +1,10 @@
 import React from "react";
 import "./Hotels.css";
 import Search from "../../assets/search.png";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 const Hotels = () => {
   return (
@@ -25,7 +29,11 @@ const Hotels = () => {
           <div className="leave">
             <span>Leave</span>
             <i class="fa-sharp fa-solid fa-plane"></i>
-            <input type="text" placeholder="Departure"/>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DemoContainer components={["DatePicker"]}>
+                <DatePicker label="Basic date picker" />
+              </DemoContainer>
+            </LocalizationProvider>
           </div>
           <div className="calender">
             <div>
@@ -36,12 +44,16 @@ const Hotels = () => {
           <div className="return">
             <span>Return</span>
             <i class="fa-sharp fa-solid fa-plane"></i>
-            <input type="text" placeholder="Return"/>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DemoContainer components={["DatePicker"]}>
+                <DatePicker label="Basic date picker" />
+              </DemoContainer>
+            </LocalizationProvider>
           </div>
         </div>
         <div className="search">
           <button className="icon">
-            <img src={Search} alt="search_icon" /> 
+            <img src={Search} alt="search_icon" />
           </button>
         </div>
       </div>

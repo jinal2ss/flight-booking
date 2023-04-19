@@ -35,7 +35,7 @@ const Flights = () => {
             <Autocomplete
               options={titles}
               renderInput={(params) => (
-                <TextField {...params} variant="outlined" />
+                <TextField {...params} placeholder="From..." variant="outlined"/>
               )}
             />
           </div>
@@ -49,7 +49,7 @@ const Flights = () => {
             <Autocomplete
               options={titles}
               renderInput={(params) => (
-                <TextField {...params} variant="outlined" />
+                <TextField {...params} placeholder="To..." variant="outlined" />
               )}
             />
           </div>
@@ -62,7 +62,7 @@ const Flights = () => {
             </div>
             <div>
               <Space direction="vertical">
-                <DatePicker onChange={onChange} />
+                <DatePicker onChange={onChange} placeholder="Select Date"/>
               </Space>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Flights = () => {
             </div>
             <div>
               <Space direction="vertical">
-                <DatePicker onChange={onChange} />
+                <DatePicker onChange={onChange} placeholder="Select Date"/>
               </Space>
             </div>
           </div>

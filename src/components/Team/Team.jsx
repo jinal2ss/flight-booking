@@ -18,7 +18,7 @@ const Team = () => {
             <span>3 Days, 3 Nights</span>
           </div>
           <h3>Loga Sea</h3>
-          <div className="price flex justify-between items-center">
+          <div className="price flex justify-between items-center">   
             <div className="writing">
               <h4>
                 700$ <span>/Person</span>
